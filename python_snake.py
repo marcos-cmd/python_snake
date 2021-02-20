@@ -4,12 +4,12 @@ import random
 
 pygame.init()
 
-white = (255, 255, 255)
-yellow = (255, 255, 102)
-black = (0, 0, 0)
-red = (213, 50, 80)
-green = (0, 255, 0)
-blue = (50, 153, 213)
+white = (214, 0, 255)
+yellow = (0, 255, 159)
+black = (0, 30, 255)
+red = (189, 0, 255)
+green = (0, 255, 159)
+blue = (0, 184, 255)
 
 dis_width = 600
 dis_height = 400
@@ -95,7 +95,7 @@ def gameLoop():
         x1 += x1_change
         y1 += y1_change
         dis.fill(blue)
-        pygame.draw.rect(dis, green, [foodx, foody, snake_block, snake_block])
+        pygame.draw.rect(dis, red, [foodx, foody, snake_block, snake_block])
         snake_Head = []
         snake_Head.append(x1)
         snake_Head.append(y1)
